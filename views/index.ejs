@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List Practice Web-App</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="deleteConfirm"><%- delMsg %></div>
+    <h1>To-Do List Webapp</h1>
+    <b>Current items to-do:</b>
+    <% if (todo) { %> <%- todolist %> <% } else { %>
+    <p>Nothing to do for now.</p>
+    <% } %>
+    <a href="/addThings">Add items to do</a>
+  </body>
+</html>

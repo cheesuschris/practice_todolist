@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Add Things to your to-do list!</h1>
+    <div id="confirmation"><% if (added) {%> <%- confirmMsg %> <% }%></div>
+    <form action="add" method="POST">
+      <fieldset>
+        <legend>Add item</legend>
+        <label>Title:</label>
+        <input type="text" name="title" required />
+        <label>Description: </label>
+        <input type="text" name="description" required />
+        <label>Due date: </label>
+        <input type="date" name="datetime" required />
+        <br />
+        <label>Priority: </label>
+        <p>High</p>
+        <input type="radio" value="high" name="priority" required />
+        <p>Medium</p>
+        <input type="radio" value="medium" name="priority" required />
+        <p>Low</p>
+        <input type="radio" value="low" name="priority" required />
+      </fieldset>
+      <button type="submit">Submit fields</button>
+    </form>
+    <a href="/">Return home</a>
+  </body>
+</html>
