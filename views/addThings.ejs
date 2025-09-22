@@ -7,7 +7,9 @@
   </head>
   <body>
     <h1>Add Things to your to-do list!</h1>
-    <div id="confirmation"><% if (added) {%> <%- confirmMsg %> <% }%></div>
+    <div id="confirmation" style="background-color: green">
+      <% if (added) {%> <%- confirmMsg %> <% }%>
+    </div>
     <form action="add" method="POST">
       <fieldset>
         <legend>Add item</legend>
